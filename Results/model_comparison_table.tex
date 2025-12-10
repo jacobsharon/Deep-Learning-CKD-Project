@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Performance comparison of MLP architectures (Models A–E).}
+\label{tab:mlp_comparison}
+\begin{tabular}{lcccccccc}
+\toprule
+Model & Accuracy & Precision & Recall (Sensitivity) & Specificity & F1 Score & AUC & Youden J & Parameters \\
+\midrule
+A_64_32 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 1.0000 & 3777.0000 \\
+B_256 & 0.9925 & 0.9884 & 1.0000 & 0.9800 & 0.9941 & 0.9993 & 0.9800 & 6657.0000 \\
+C_64_32_16_8 & 0.9975 & 0.9961 & 1.0000 & 0.9933 & 0.9980 & 0.9997 & 0.9933 & 4465.0000 \\
+D_128_32_128 & 0.9950 & 0.9922 & 1.0000 & 0.9867 & 0.9960 & 0.9995 & 0.9867 & 12001.0000 \\
+E_64_32_16 & 0.9975 & 0.9961 & 1.0000 & 0.9933 & 0.9980 & 0.9999 & 0.9933 & 4321.0000 \\
+\bottomrule
+\end{tabular}
+\end{table}
