@@ -2,7 +2,7 @@
 
 ## Chronic Kidney Disease Classification Using Multi-Layer Perceptrons (MLPs)
 
-This project implements a complete CKD classification workflow using PyTorch inside a Jupyter Notebook. The notebook loads the dataset directly from the UCI Machine Learning Repository using `ucimlrepo`, preprocesses all features, trains MLP models, evaluates their performance, and generates SHAP interpretability plots.
+This project implements an MLP-based CKD classification workflow using PyTorch inside a Jupyter Notebook. The notebook loads the dataset directly from the UCI Machine Learning Repository using `ucimlrepo`, preprocesses all features, trains MLP models, evaluates their performance, and generates SHAP interpretability plots on the best performing model.
 
 ---
 
@@ -99,7 +99,7 @@ An MLP classifier is defined with:
 - Optimizer: AdamW  
 - Loss: BCEWithLogitsLoss  
 - Batch size: 32  
-- 70/30 training–validation split  
+- 80/20 training–validation split  
 - Early stopping based on validation loss  
 - Epoch-wise training and validation loss tracking  
 
@@ -125,8 +125,8 @@ The notebook generates:
 
 ### 8. SHAP Interpretability
 The notebook produces:
-- SHAP summary plot  
-- SHAP dependence plots for highly influential clinical features  
+- SHAP summary plot 
+- SHAP dependence plots 
 
 These explain how input variables contribute to model predictions.
 
